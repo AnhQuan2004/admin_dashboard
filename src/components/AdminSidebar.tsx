@@ -1,5 +1,5 @@
 
-import { Users, MessageSquare, BarChart3, Home, Menu, LogOut } from 'lucide-react';
+import { Users, MessageSquare, BarChart3, Home, Menu, LogOut, FileText, UserCheck } from 'lucide-react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { cn } from '@/lib/utils';
@@ -9,6 +9,8 @@ const navigation = [
   { name: 'Users', href: '/admin/users', icon: Users },
   { name: 'Quiz Results', href: '/admin/quiz-results', icon: BarChart3 },
   { name: 'Chat Conversations', href: '/admin/conversations', icon: MessageSquare },
+  { name: 'Expert Applications', href: '/admin/expert-applications', icon: FileText },
+  { name: 'Experts', href: '/admin/experts', icon: UserCheck },
 ];
 
 export function AdminSidebar() {
